@@ -9,7 +9,7 @@ import Link from "next/link";
 const LINKS = [
   { label: "Головна", href: "/" },
   { label: "Оголошення", href: "/listings" },
-  { label: "Наша команда", href: "/members" },
+  { label: "Команда", href: "/members" },
   { label: "Блог", href: "#" },
   { label: "Сторінки", href: "#" },
   { label: "Контакти", href: "#" }
@@ -34,7 +34,7 @@ export function Header() {
                 key={index}
                 className="flex items-center gap-2"
               >
-                <p>{item.label}</p>
+                <p className="text-nowrap">{item.label}</p>
                 {index !== LINKS.length - 1 && (
                   <Image src={Arrow} alt="стрілка" className="w-2 h-1" />
                 )}
