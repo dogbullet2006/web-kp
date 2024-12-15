@@ -55,7 +55,10 @@ export const Ratings = () => {
 
         <div className="grid grid-cols-3 gap-[30px] text-[#1a1a1a] mb-[100px]">
           {data.map(review => (
-            <div className="bg-[#f9f9f9] rounded-[16px] p-10 flex flex-col gap-5">
+            <div
+              key={review.name}
+              className="bg-[#f9f9f9] rounded-[16px] p-10 flex flex-col gap-5"
+            >
               <header className="flex justify-between items-center">
                 <div className="flex gap-5">
                   <Image src={review.img} alt="thumb" />

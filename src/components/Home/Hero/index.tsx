@@ -19,7 +19,7 @@ export function Hero() {
 
         <div className="flex items-center gap-4">
           <p className="text-[15px] leading-4 font-medium text-primary-yellow">
-            Переглянути більше об'єктів
+            Переглянути більше об&apos;єктів
           </p>
           <Arrow />
         </div>
@@ -36,7 +36,7 @@ export function Hero() {
         </div>
         <div className="flex flex-col gap-1">
           <p className="text-[30px] leading-[30px] font-medium">500+</p>
-          <p className="text-[15px] leading-[37.5px]">Готові об'єкти</p>
+          <p className="text-[15px] leading-[37.5px]">Готові об&apos;єкти</p>
         </div>
       </div>
     </MainLayout>
