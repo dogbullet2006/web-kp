@@ -9,7 +9,7 @@ import Link from "next/link";
 const LINKS = [
   { label: "Головна", href: "/" },
   { label: "Оголошення", href: "/listings" },
-  { label: "Члени", href: "/members" },
+  { label: "Наша команда", href: "/members" },
   { label: "Блог", href: "#" },
   { label: "Сторінки", href: "#" },
   { label: "Контакти", href: "#" }

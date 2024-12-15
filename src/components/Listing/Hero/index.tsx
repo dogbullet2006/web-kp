@@ -13,7 +13,7 @@ export const ListingHero = () => {
       className={`bg-[url('../assets/icons/hero.png')] h-screen w-full bg-no-repeat flex items-center bg-contain justify-center text-[#fff]`}
     >
       <div className="flex flex-col justify-center items-center text-center gap-[21px]">
-        <div className="border-[1px] border-[#fff] w-[210px] h-[40px] rounded-full flex justify-center items-center">
+        <div className="border-[1px] border-[#fff] w-fit px-5 h-[40px] rounded-full flex justify-center items-center">
           <p className="text-[13px] leading-[38px] font-medium">
             ДОЗВОЛЬТЕ НАМ ВЕСТИ ВАШ ДІМ
           </p>
@@ -32,7 +32,7 @@ export const ListingHero = () => {
               </div>
             ))}
           </div>
-          <div className="bg-[#fff] max-w-[690px] w-full h-[70px] rounded-[70px] pl-[30px] pr-[5px] py-[7px] text-[#000] flex items-center">
+          <div className="bg-[#fff]  w-full h-[70px] rounded-[70px] pl-[30px] pr-[5px] py-[7px] text-[#000] flex items-center">
             <input
               className="h-full w-full border-none focus:border-none focus:outline-0"
               placeholder="Введіть ім'я, ключові слова..."
