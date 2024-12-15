@@ -29,12 +29,8 @@ export function Header() {
         <nav>
           <ul className="flex gap-5">
             {LINKS.map((item, index) => (
-              <li>
-                <Link
-                  href={item.href}
-                  key={index}
-                  className="flex items-center gap-2"
-                >
+              <li key={index}>
+                <Link href={item.href} className="flex items-center gap-2">
                   <p className="text-nowrap">{item.label}</p>
                   {index !== LINKS.length - 1 && (
                     <Image src={Arrow} alt="стрілка" className="w-2 h-1" />
