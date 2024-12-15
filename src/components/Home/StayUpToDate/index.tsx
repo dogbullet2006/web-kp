@@ -18,7 +18,7 @@ export const StayUpToDate = () => {
           placeholder="Введіть свою електронну адресу"
           suffix={
             <button className="text-[#1A1A1A] font-medium text-[15px] leading-[28px] flex items-center gap-2">
-              <p>Надіслати</p>
+              Надіслати
               <Arrow fill="#1a1a1a" />
             </button>
           }

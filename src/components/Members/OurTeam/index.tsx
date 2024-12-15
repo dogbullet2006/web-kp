@@ -55,7 +55,7 @@ export const OurTeam = () => {
                 найвищим стандартам якості. Переконайтеся самі!
               </p>
               <Button additionalStyles="!bg-[#000] !text-[#fff]">
-                <p>Дізнатися більше</p>
+                Дізнатися більше
                 <Arrow />
               </Button>
             </div>

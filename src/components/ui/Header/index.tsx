@@ -29,16 +29,18 @@ export function Header() {
         <nav>
           <ul className="flex gap-5">
             {LINKS.map((item, index) => (
-              <Link
-                href={item.href}
-                key={index}
-                className="flex items-center gap-2"
-              >
-                <p className="text-nowrap">{item.label}</p>
-                {index !== LINKS.length - 1 && (
-                  <Image src={Arrow} alt="стрілка" className="w-2 h-1" />
-                )}
-              </Link>
+              <li>
+                <Link
+                  href={item.href}
+                  key={index}
+                  className="flex items-center gap-2"
+                >
+                  <p className="text-nowrap">{item.label}</p>
+                  {index !== LINKS.length - 1 && (
+                    <Image src={Arrow} alt="стрілка" className="w-2 h-1" />
+                  )}
+                </Link>
+              </li>
             ))}
           </ul>
         </nav>
@@ -52,7 +54,7 @@ export function Header() {
           <Image src={Account} alt="акаунт" className="w-[20px] h-[20px]" />
         </div>
         <button className="w-fit h-[42.5px] px-5 border-[1px] border-white rounded-full flex items-center justify-center">
-          <p>Додати нерухомість</p>
+          Додати нерухомість
         </button>
       </div>
     </header>

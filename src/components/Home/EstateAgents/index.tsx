@@ -19,7 +19,7 @@ export const EstateAgents = () => {
           </p>
           <div className="flex justify-between items-center">
             <Button>
-              <p>Зареєструватися зараз</p>
+              Зареєструватися зараз
               <Arrow fill="#1a1a1a" />
             </Button>
 

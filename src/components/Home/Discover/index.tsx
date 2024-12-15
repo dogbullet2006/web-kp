@@ -16,10 +16,8 @@ export const Discover = () => {
           <br /> Виберіть свою майбутню домівку з нашою допомогою
         </p>
 
-        <Button>
-          <p className="font-medium text-[15px] leading-[50px]">
-            Дізнатися більше
-          </p>
+        <Button additionalStyles="!font-medium !text-[15px] !leading-[50px]">
+          Дізнатися більше
           <Arrow fill="#1a1a1a" />
         </Button>
       </div>

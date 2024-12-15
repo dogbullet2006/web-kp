@@ -46,7 +46,9 @@ export const RecentArticles = () => {
             </p>
 
             <div className="flex items-center gap-2 cursor-pointer">
-              <p className="font-medium text-[15px] leading-4">Переглянути всі новини</p>
+              <p className="font-medium text-[15px] leading-4">
+                Переглянути всі новини
+              </p>
               <Arrow fill="#1a1a1a" />
             </div>
           </div>
@@ -54,7 +56,10 @@ export const RecentArticles = () => {
         <div>
           <div className="grid grid-cols-4 gap-5">
             {data.map((item, i) => (
-              <div key={i} className="border-[1px] border-[#e9e9e9] bg-[#fff] rounded-[16px] overflow-hidden flex flex-col gap-5 text-center">
+              <div
+                key={i}
+                className="border-[1px] border-[#e9e9e9] bg-[#fff] rounded-[16px] overflow-hidden flex flex-col gap-5 text-center"
+              >
                 <Image
                   src={item.img}
                   alt={item.type}
@@ -70,10 +75,8 @@ export const RecentArticles = () => {
                   <h4 className="text-[#1A1A1A] text-[17px] leading-[26px] font-medium">
                     {item.desc}
                   </h4>
-                  <button className="flex gap-2 items-center group">
-                    <p className="font-medium text-[15px] leading-[29px]">
-                      Читати далі
-                    </p>
+                  <button className="flex gap-2 items-center group ~font-medium ~text-[15px] ~leading-[29px]">
+                    Читати далі
                     <Arrow fill="#1A1A1A" />
                   </button>
                 </div>

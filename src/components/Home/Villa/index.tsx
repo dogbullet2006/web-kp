@@ -47,7 +47,7 @@ export const Villa = () => {
 
             <div>
               <Button>
-                <p>Дізнатися більше </p>
+                Дізнатися більше
                 <Arrow fill="#1a1a1a" />
               </Button>
             </div>
