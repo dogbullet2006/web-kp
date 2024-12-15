@@ -6,9 +6,9 @@ import { HouseCard } from "@/components/Home/HouseCard";
 const data = [
   {
     id: 1,
-    title: "Skyper Pool Apartment",
+    title: "Квартира з басейном Skyper",
     location: "1020 Bloomingdale Ave",
-    labels: ["for sale"],
+    labels: ["на продаж"],
     price: 280000,
     beds: 4,
     baths: 2,
@@ -17,9 +17,9 @@ const data = [
   },
   {
     id: 2,
-    title: "North Dillard Street",
+    title: "Вулиця Норт Діллард",
     location: "4330 Bell Shoals Rd",
-    labels: ["for rent"],
+    labels: ["в оренду"],
     price: 250,
     beds: 4,
     baths: 2,
@@ -28,9 +28,9 @@ const data = [
   },
   {
     id: 3,
-    title: "Eaton Garth Penthouse",
+    title: "Пентхаус Ітон Гарт",
     location: "7722 18th Ave, Brooklyn",
-    labels: ["for sale", "featured"],
+    labels: ["на продаж", "рекомендовано"],
     price: 180000,
     beds: 4,
     baths: 2,
@@ -42,9 +42,11 @@ const data = [
 export const Homes = () => {
   return (
     <section className="mt-5 bg-[#F6F8FA] rounded-[24px] min-h-[593px] flex items-center justify-center flex-col text-[#1a1a1a] pt-[50px] pb-[150px]">
-      <h2 className="font-medium text-[40px] leading-[52px]">Homes For You</h2>
+      <h2 className="font-medium text-[40px] leading-[52px]">
+        Будинки для вас
+      </h2>
       <p className="text-[17px] leading-[32.3px] mt-[5px] mb-[30px]">
-        Based on your view history
+        На основі вашої історії переглядів
       </p>
       <div className="flex gap-[30px]">
         {data.map(x => (

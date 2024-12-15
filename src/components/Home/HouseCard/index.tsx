@@ -42,7 +42,7 @@ export const HouseCard: FC<Props> = ({
             <div
               key={label}
               className={`bg-[#1F4B43] text-[#fff] rounded-[33px] px-[15px] uppercase ${
-                label === "featured" ? "!bg-[#E7C873] !text-[#1a1a1a]" : ""
+                label === "рекомендовано" ? "!bg-[#E7C873] !text-[#1a1a1a]" : ""
               }`}
             >
               <p className="leading-[33px] text-[13px] font-medium">{label}</p>

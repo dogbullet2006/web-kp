@@ -9,30 +9,22 @@ import Image from "next/image";
 
 const data = [
   {
-    name: "Cameron Williamson",
-    position: "Designer",
+    name: "Камерон Вільямсон",
+    position: "Дизайнер",
     review:
-      "I have been using it for a while now and I can say that it is the best product I have ever used. It is very easy to use and the results are amazing.",
+      "Я використовую його вже деякий час і можу сказати, що це найкращий продукт, який я коли-небудь використовував. Він дуже простий у використанні, а результати вражаючі.",
     img: Designer
   },
   {
-    name: "Esther Howard",
-    position: "Marketing",
-    review: `Sed ut perspiciatis unde omnis iste natus error
-     sit voluptatem accusantium doloremque
-     laudantium, totam rem aperiam, eaque ipsa
-     quae ab illo inventore veritatis et quasi
-     architecto beatae vitae.`,
+    name: "Естер Говард",
+    position: "Маркетинг",
+    review: `Це найкращий продукт, який я коли-небудь використовувала. Він дуже простий у використанні, а результати вражаючі.`,
     img: Marketing
   },
   {
-    name: "Devon Lane",
-    position: "Developer",
-    review: `Nemo enim ipsam voluptatem quia voluptas sit
-      aspernatur aut odit aut fugit, sed quia
-      consequuntur magni dolores eos qui ratione
-      voluptatem sequi nesciunt. Neque porro
-      quisquam est.`,
+    name: "Девон Лейн",
+    position: "Розробник",
+    review: `Це найкращий продукт, який я коли-небудь використовував. Він дуже простий у використанні, а результати вражаючі.`,
     img: Developer
   }
 ];
@@ -43,19 +35,19 @@ export const Ratings = () => {
       <div className="max-w-[1200px] flex flex-col items-center gap-5 w-full">
         <div className="flex justify-between items-center w-full">
           <h3 className="text-[40px] leading-[52px] font-medium">
-            What our customers are
-            <br /> saying us?
+            Що наші клієнти
+            <br /> говорять про нас?
           </h3>
           <div className="flex gap-10">
             <div className="flex flex-col">
-              <p className="font-medium text-[26px] leading-[34px]">10m+</p>
-              <p className="text-[15px] leading-[38px]">Happy People</p>
+              <p className="font-medium text-[26px] leading-[34px]">10м+</p>
+              <p className="text-[15px] leading-[38px]">Щасливі люди</p>
             </div>
             <div className="flex flex-col">
               <p className="font-medium text-[26px] leading-[34px]">4.88</p>
-              <p className="text-[15px] leading-[38px]">Overall rating</p>
+              <p className="text-[15px] leading-[38px]">Загальний рейтинг</p>
               <div className="flex">
-                <Image src={Stars} alt="stars" className="w-[80px] h-2.5" />
+                <Image src={Stars} alt="зірки" className="w-[80px] h-2.5" />
               </div>
             </div>
           </div>
@@ -85,9 +77,9 @@ export const Ratings = () => {
 
         <div className="flex flex-col gap-5 text-[#1a1a1a] text-center">
           <p className="text-[17px] leading-[33px]">
-            Thousands of world’s leading companies trust Space
+            Тисячі провідних світових компаній довіряють Space
           </p>
-          <Image src={Companies} alt="companies" />
+          <Image src={Companies} alt="компанії" />
         </div>
       </div>
     </MainLayout>

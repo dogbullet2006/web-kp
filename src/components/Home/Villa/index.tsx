@@ -12,32 +12,32 @@ export const Villa = () => {
   return (
     <MainLayout additionalStyles="bg-[#fff] text-[#1a1a1a]">
       <div className="max-w-[1200px] flex items-center gap-[80px]">
-        <Image src={VillaImage} alt="villa" className="max-w-[700px] flex-1" />
+        <Image src={VillaImage} alt="вілла" className="max-w-[700px] flex-1" />
         <div className="flex-1">
           <div className="flex flex-col gap-5">
             <h2 className="font-medium text-[40px] leading-[48px]">
-              Villa One Hyde Park
+              Вілла One Hyde Park
             </h2>
             <div className="flex items-center gap-2">
-              <Image src={locationIcon} alt="location" />
+              <Image src={locationIcon} alt="локація" />
               <p className="text-[16px] leading-[30px]">
                 2050 Bloomingdale Ave
               </p>
             </div>
             <p className="text-[16px] leading-[30px]">
-              Enchanting three bedroom, three bath home with spacious one
-              bedroom, one bath cabana, in-laws quarters. Charming living area
-              features fireplace and fabulous art deco details.
+              Чарівний будинок з трьома спальнями та трьома ванними кімнатами,
+              простора однокімнатна кабана, житло для родичів. Затишна вітальня
+              з каміном та чудовими арт-деко деталями.
             </p>
             <div className="divide-x-[1px] flex mt-[10px]">
               <div className="flex items-center pr-[15px] gap-[10px]">
-                <Image src={bed} alt="bed" /> <p>4 Beds</p>
+                <Image src={bed} alt="ліжко" /> <p>4 Ліжка</p>
               </div>
               <div className="flex items-center px-[15px] gap-[10px]">
-                <Image src={bath} alt="bath" /> <p>2 Baths</p>
+                <Image src={bath} alt="ванна" /> <p>2 Ванни</p>
               </div>
               <div className="flex items-center px-[15px] gap-[10px]">
-                <Image src={ft} alt="sqft" /> <p>350 sqft</p>
+                <Image src={ft} alt="кв. фут" /> <p>350 кв. фут</p>
               </div>
             </div>
 
@@ -47,7 +47,7 @@ export const Villa = () => {
 
             <div>
               <Button>
-                <p>Learn More </p>
+                <p>Дізнатися більше </p>
                 <Arrow fill="#1a1a1a" />
               </Button>
             </div>

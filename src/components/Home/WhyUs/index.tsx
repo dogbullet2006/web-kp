@@ -6,18 +6,18 @@ import Image from "next/image";
 
 const data = [
   {
-    title: "Wide Range of Properties",
-    desc: "We offer expert legal help for all related property items in Dubai.",
+    title: "Широкий вибір нерухомості",
+    desc: "Ми пропонуємо експертну юридичну допомогу з усіх питань, пов'язаних з нерухомістю в Дубаї.",
     img: Properties
   },
   {
-    title: "Buy or Rent Homes",
-    desc: "We sell your home at the best market price and very quickly as well.",
+    title: "Купівля або оренда житла",
+    desc: "Ми продаємо ваш будинок за найкращою ринковою ціною та дуже швидко.",
     img: Rent
   },
   {
-    title: "Trusted by Thousands",
-    desc: "We offer you free consultancy to get a loan for your new home.",
+    title: "Довіряють тисячі",
+    desc: "Ми пропонуємо вам безкоштовну консультацію для отримання кредиту на новий будинок.",
     img: Trust
   }
 ];
@@ -28,10 +28,10 @@ export const WhyUs = () => {
       <div className="max-w-[1200px] w-full flex flex-col gap-10 text-center items-center">
         <div>
           <h2 className="font-medium text-[40px] leading-[52xp] ">
-            Why You Should Work With Us
+            Чому варто працювати з нами
           </h2>
           <p className="text-[17px] leading-[32px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Ми пропонуємо найкращі послуги на ринку нерухомості.
           </p>
         </div>
 

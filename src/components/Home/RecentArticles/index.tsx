@@ -7,27 +7,27 @@ import Image from "next/image";
 
 const data = [
   {
-    type: "Apartment",
-    date: "March 19, 2024",
-    desc: "Housing Markets That Changed the Most This Week",
+    type: "Квартира",
+    date: "19 березня 2024",
+    desc: "Ринки житла, які найбільше змінилися цього тижня",
     img: House1
   },
   {
-    type: "Apartment",
-    date: "March 19, 2024",
-    desc: "Read Unveils the Best Canadian Cities for Biking",
+    type: "Квартира",
+    date: "19 березня 2024",
+    desc: "Read представляє найкращі канадські міста для велосипедистів",
     img: House2
   },
   {
-    type: "Office",
-    date: "March 19, 2024",
-    desc: "10 Walkable Cities Where You Can Live Affordably",
+    type: "Офіс",
+    date: "19 березня 2024",
+    desc: "10 міст, де можна жити доступно і ходити пішки",
     img: House3
   },
   {
-    type: "Shop",
-    date: "March 19, 2024",
-    desc: "New Apartment Nice in the Best Canadian Cities",
+    type: "Магазин",
+    date: "19 березня 2024",
+    desc: "Нові квартири в найкращих канадських містах",
     img: House4
   }
 ];
@@ -38,15 +38,15 @@ export const RecentArticles = () => {
       <div className="max-w-[1200px] w-full flex flex-col gap-10">
         <div className="flex flex-col gap-2 w-full">
           <h2 className="font-medium text-[40px] leading-[52px] ">
-            Recent Articles & News
+            Останні статті та новини
           </h2>
           <div className="flex items-end justify-between w-full">
             <p className="text-[17px] leading-[32px]">
-              Lorem ipsum dolor sit amet
+              Дізнайтеся про останні новини та оновлення
             </p>
 
             <div className="flex items-center gap-2 cursor-pointer">
-              <p className="font-medium text-[15px] leading-4">View All News</p>
+              <p className="font-medium text-[15px] leading-4">Переглянути всі новини</p>
               <Arrow fill="#1a1a1a" />
             </div>
           </div>
@@ -54,7 +54,7 @@ export const RecentArticles = () => {
         <div>
           <div className="grid grid-cols-4 gap-5">
             {data.map((item, i) => (
-              <div className="border-[1px] border-[#e9e9e9] bg-[#fff] rounded-[16px] overflow-hidden flex flex-col gap-5 text-center">
+              <div key={i} className="border-[1px] border-[#e9e9e9] bg-[#fff] rounded-[16px] overflow-hidden flex flex-col gap-5 text-center">
                 <Image
                   src={item.img}
                   alt={item.type}
@@ -67,12 +67,12 @@ export const RecentArticles = () => {
                     <div className="w-1 h-1 rounded-full bg-[#3D3E3F]"></div>
                     <p>{item.date}</p>
                   </div>
-                  <h4 className="text=[#1A1A1A] text-[17px] leading-[26px] font-medium">
-                    Housing Markets That Changed the Most This Week
+                  <h4 className="text-[#1A1A1A] text-[17px] leading-[26px] font-medium">
+                    {item.desc}
                   </h4>
                   <button className="flex gap-2 items-center group">
                     <p className="font-medium text-[15px] leading-[29px]">
-                      Read More
+                      Читати далі
                     </p>
                     <Arrow fill="#1A1A1A" />
                   </button>

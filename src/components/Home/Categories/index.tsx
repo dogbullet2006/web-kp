@@ -7,10 +7,10 @@ import Image, { StaticImageData } from "next/image";
 import { FC } from "react";
 
 const data = [
-  { title: "Town House", desc: "2 properties", img: House1 },
-  { title: "Modern Villa", desc: "10 properties", img: House2 },
-  { title: "Apartment", desc: "3 properties", img: House3 },
-  { title: "Single Family", desc: "5 properties", img: House4 }
+  { title: "Таунхаус", desc: "2 об'єкти", img: House1 },
+  { title: "Сучасна вілла", desc: "10 об'єктів", img: House2 },
+  { title: "Квартира", desc: "3 об'єкти", img: House3 },
+  { title: "Односімейний будинок", desc: "5 об'єктів", img: House4 }
 ];
 
 export const Categories = () => {
@@ -19,16 +19,16 @@ export const Categories = () => {
       <div className="max-w-[1200px] w-full flex flex-col gap-10">
         <div className="flex flex-col gap-2 w-full">
           <h2 className="font-medium text-[40px] leading-[52px] ">
-            Featured Categories
+            Рекомендовані категорії
           </h2>
           <div className="flex items-end justify-between w-full">
             <p className="text-[17px] leading-[32px]">
-              Lorem ipsum dolor sit amet
+              Виберіть категорію, яка вас цікавить
             </p>
 
             <div className="flex items-center gap-2 cursor-pointer">
               <p className="font-medium text-[15px] leading-4">
-                View All Categories
+                Переглянути всі категорії
               </p>
               <Arrow fill="#1a1a1a" />
             </div>

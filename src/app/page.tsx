@@ -6,7 +6,7 @@ import { Hero } from "@/components/Home/Hero";
 import { HouseGallery } from "@/components/Home/HouseGallery";
 import { Ratings } from "@/components/Home/Ratings";
 import { RecentArticles } from "@/components/Home/RecentArticles";
-import { StayUpToDay } from "@/components/Home/StayUpToDate";
+import { StayUpToDate } from "@/components/Home/StayUpToDate";
 import { Villa } from "@/components/Home/Villa";
 import { WhyUs } from "@/components/Home/WhyUs";
 import ScrollToTop from "@/components/ui/ScrollToTop";
@@ -24,7 +24,7 @@ export default function Home() {
       <BestProperties />
       <EstateAgents />
       <RecentArticles />
-      <StayUpToDay />
+      <StayUpToDate />
 
       <ScrollToTop />
     </main>

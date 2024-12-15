@@ -9,33 +9,33 @@ import Image from "next/image";
 const data = [
   {
     image: thumb1,
-    title: "New York",
-    desc: "8 Properties"
+    title: "Нью-Йорк",
+    desc: "8 об'єктів"
   },
   {
     image: thumb2,
-    title: "Chicago",
-    desc: "2 Properties"
+    title: "Чикаго",
+    desc: "2 об'єкти"
   },
   {
     image: thumb3,
-    title: "Los Angeles",
-    desc: "1 Properties"
+    title: "Лос-Анджелес",
+    desc: "1 об'єкт"
   },
   {
     image: thumb4,
-    title: "San Diego",
-    desc: "0 Properties"
+    title: "Сан-Дієго",
+    desc: "0 об'єктів"
   },
   {
     image: thumb5,
-    title: "Florida",
-    desc: "3 Properties"
+    title: "Флорида",
+    desc: "3 об'єкти"
   },
   {
     image: thumb6,
-    title: "Miami",
-    desc: "2 Properties"
+    title: "Маямі",
+    desc: "2 об'єкти"
   }
 ];
 
@@ -43,10 +43,10 @@ export const Properties = () => {
   return (
     <section className="min-h-[1300px] flex items-center justify-center flex-col bg-[#fff]">
       <h3 className="text-[#1a1a1a] leading-[51px] text-[40px] font-medium">
-        Find Properties in These Cities
+        Знайдіть нерухомість у цих містах
       </h3>
       <p className="mt-[5px] mb-[30px] text-[#1a1a1a] leading-[32.3px] text-[17px]">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Відкрийте для себе найкращі місця для життя.
       </p>
       <div className="grid grid-cols-4 gap-[30px] h-[830px] w-full grid-rows-2 max-w-[1400px]">
         {data.map((item, index) => (

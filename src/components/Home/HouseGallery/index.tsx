@@ -1,6 +1,5 @@
 "use client";
 import { Arrow } from "@/assets/icons/Arrow";
-
 import { MainLayout } from "@/components/ui/MailLayout";
 import { useState } from "react";
 import { HouseCard } from "../HouseCard";
@@ -24,16 +23,16 @@ export const HouseGallery = () => {
       <div className="max-w-[1200px] w-full flex flex-col gap-10">
         <div className="flex flex-col gap-2 w-full">
           <h2 className="font-medium text-[40px] leading-[52px] ">
-            Featured Categories
+            Рекомендовані категорії
           </h2>
           <div className="flex items-end justify-between w-full">
             <p className="text-[17px] leading-[32px]">
-              Lorem ipsum dolor sit amet
+              Виберіть категорію, яка вас цікавить
             </p>
 
             <div className="flex items-center gap-2 cursor-pointer">
               <p className="font-medium text-[15px] leading-4">
-                View All Categories
+                Переглянути всі категорії
               </p>
               <Arrow fill="#1a1a1a" />
             </div>

@@ -6,23 +6,23 @@ import Image from "next/image";
 
 const data = [
   {
-    title: "Find your future home",
-    desc: "We help you find a new home by offering a smart real estate experience",
+    title: "Знайдіть свій майбутній дім",
+    desc: "Ми допомагаємо вам знайти новий дім, пропонуючи розумний досвід у сфері нерухомості",
     image: image1
   },
   {
-    title: "Experienced agents",
-    desc: "Find an experienced agent who knows your market best",
+    title: "Досвідчені агенти",
+    desc: "Знайдіть досвідченого агента, який найкраще знає ваш ринок",
     image: image2
   },
   {
-    title: "Buy or rent homes",
-    desc: "Millions of houses and apartments in yourfavourite cities",
+    title: "Купуйте або орендуйте будинки",
+    desc: "Мільйони будинків та квартир у ваших улюблених містах",
     image: image3
   },
   {
-    title: "List your own property",
-    desc: "Sign up now and sell or rent your own properties",
+    title: "Перелічіть свою власність",
+    desc: "Зареєструйтесь зараз і продавайте або орендуйте свою власність",
     image: image4
   }
 ];
@@ -33,10 +33,10 @@ export const WhyUs = () => {
       <div>
         <div className="mb-[50px]">
           <h3 className="text-[40px] leading-[52px] font-medium  mb-[10px]">
-            Why Choose Us
+            Чому обирають нас
           </h3>
           <p className="text-[17px] leading-[32.3px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Ми пропонуємо найкращі послуги у сфері нерухомості.
           </p>
         </div>
         <div className="flex gap-[75px]">

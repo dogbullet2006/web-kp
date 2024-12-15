@@ -35,7 +35,7 @@ export const HouseModal: FC<Props> = ({ open, onClose, data }) => {
         </div>
         <DialogFooter>
           <Button onClick={() => onClose()} type="submit">
-            Close
+            Окідокі
           </Button>
         </DialogFooter>
       </DialogContent>

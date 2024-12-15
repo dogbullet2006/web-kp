@@ -3,7 +3,7 @@ import search from "@/assets/icons/search.svg";
 import Image from "next/image";
 import { useState } from "react";
 
-const options = ["Sale", "Rent"];
+const options = ["Продаж", "Оренда"];
 
 export const ListingHero = () => {
   const [option, setOption] = useState(options[0]);
@@ -15,11 +15,11 @@ export const ListingHero = () => {
       <div className="flex flex-col justify-center items-center text-center gap-[21px]">
         <div className="border-[1px] border-[#fff] w-[210px] h-[40px] rounded-full flex justify-center items-center">
           <p className="text-[13px] leading-[38px] font-medium">
-            LET US GUIDE YOUR HOME
+            ДОЗВОЛЬТЕ НАМ ВЕСТИ ВАШ ДІМ
           </p>
         </div>
         <h2 className="text-[60px] font-medium leading-[78px]">
-          Discover a place you&apos;ll <br /> love to live
+          Відкрийте для себе місце, яке вам <br /> сподобається жити
         </h2>
         <div className="mt-[9px] w-full flex flex-col gap-[30px]">
           <div className="flex justify-center items-start gap-[60px]">
@@ -35,10 +35,10 @@ export const ListingHero = () => {
           <div className="bg-[#fff] max-w-[690px] w-full h-[70px] rounded-[70px] pl-[30px] pr-[5px] py-[7px] text-[#000] flex items-center">
             <input
               className="h-full w-full border-none focus:border-none focus:outline-0"
-              placeholder="Enter Name, Keywords..."
+              placeholder="Введіть ім'я, ключові слова..."
             />
             <div className="bg-[#E7C873] min-w-[60px] h-[60px] flex justify-center items-center rounded-full">
-              <Image src={search} alt="search" />
+              <Image src={search} alt="пошук" />
             </div>
           </div>
         </div>

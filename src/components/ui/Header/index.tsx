@@ -7,19 +7,25 @@ import Image from "next/image";
 import Link from "next/link";
 
 const LINKS = [
-  { label: "Home", href: "/" },
-  { label: "Listings", href: "/listings" },
-  { label: "Members", href: "/members" },
-  { label: "Blog", href: "#" },
-  { label: "Pages", href: "#" },
-  { label: "Contact", href: "#" }
+  { label: "Головна", href: "/" },
+  { label: "Оголошення", href: "/listings" },
+  { label: "Члени", href: "/members" },
+  { label: "Блог", href: "#" },
+  { label: "Сторінки", href: "#" },
+  { label: "Контакти", href: "#" }
 ];
 
 export function Header() {
   return (
     <header className="text-white absolute top-0 left-0 w-full py-[50px] px-[60px] flex justify-between items-center z-[1]">
-      <Image src={Favicon} alt="main logo" className="w-[150px] h-[42px]" />
-      <div>
+      <div className="flex-1 flex items-start">
+        <Image
+          src={Favicon}
+          alt="головний логотип"
+          className="w-[150px] h-[42px]"
+        />
+      </div>
+      <div className="flex-1">
         <nav>
           <ul className="flex gap-5">
             {LINKS.map((item, index) => (
@@ -30,23 +36,23 @@ export function Header() {
               >
                 <p>{item.label}</p>
                 {index !== LINKS.length - 1 && (
-                  <Image src={Arrow} alt="arrow" className="w-2 h-1" />
+                  <Image src={Arrow} alt="стрілка" className="w-2 h-1" />
                 )}
               </Link>
             ))}
           </ul>
         </nav>
       </div>
-      <div className="flex gap-5">
+      <div className="flex gap-5 flex-1 items-center justify-end">
         <div className="flex items-center gap-3">
           <Phone />
           <p>+68 685 88666</p>
         </div>
         <div className="w-10 h-10 border-[1px] border-white rounded-full flex items-center justify-center">
-          <Image src={Account} alt="account" className="w-[20px] h-[20px]" />
+          <Image src={Account} alt="акаунт" className="w-[20px] h-[20px]" />
         </div>
-        <button className="w-[150px] h-[42.5px] border-[1px] border-white rounded-full flex items-center justify-center">
-          <p>Add Property</p>
+        <button className="w-fit h-[42.5px] px-5 border-[1px] border-white rounded-full flex items-center justify-center">
+          <p>Додати нерухомість</p>
         </button>
       </div>
     </header>

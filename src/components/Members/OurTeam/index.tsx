@@ -9,10 +9,10 @@ import { MainLayout } from "@/components/ui/MailLayout";
 import Image from "next/image";
 
 const TEAM_MEMBERS = [
-  { name: "John Powell", role: "Service Support", img: People1 },
-  { name: "Thomas Powell", role: "Marketing", img: People2 },
-  { name: "Tom Wilson", role: "Designer", img: People3 },
-  { name: "Samuel Palmer", role: "Marketing", img: People4 }
+  { name: "John Powell", role: "Підтримка сервісу", img: People1 },
+  { name: "Thomas Powell", role: "Маркетинг", img: People2 },
+  { name: "Tom Wilson", role: "Дизайнер", img: People3 },
+  { name: "Samuel Palmer", role: "Маркетинг", img: People4 }
 ];
 
 export const OurTeam = () => {
@@ -22,10 +22,11 @@ export const OurTeam = () => {
         <div className="flex flex-col gap-10">
           <header className="flex flex-col gap-1">
             <h2 className="text-[40px] leading-[52px] font-medium">
-              Meet Our Team Of Experts
+              Познайомтесь з нашою командою експертів
             </h2>
             <p className="text-[17px] leading-[33px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ми — команда професіоналів, які працюють над створенням якісних
+              рішень для вас.
             </p>
           </header>
           <div className="grid grid-cols-4 gap-5">
@@ -47,14 +48,14 @@ export const OurTeam = () => {
           <div className="flex-1 flex flex-col">
             <div className="px-10 flex flex-col items-start gap-5 text-left">
               <h2 className="font-medium text-[40px] leading-[52px]">
-                Discover Our Finest Selection
+                Відкрийте для себе наш найкращий вибір
               </h2>
               <p className="text-[16px] leading-[31px]">
-                Pellentesque egestas elementum egestas faucibus sem. Velit nunc
-                egestas ut morbi. Leo diam diam.
+                Ми пропонуємо широкий асортимент продуктів, що відповідають
+                найвищим стандартам якості. Переконайтеся самі!
               </p>
               <Button additionalStyles="!bg-[#000] !text-[#fff]">
-                <p>Discover</p>
+                <p>Дізнатися більше</p>
                 <Arrow />
               </Button>
             </div>
